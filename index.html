@@ -21,27 +21,60 @@
       background-color: #111;
       border-bottom: 2px solid #f4c430;
     }
-
-    h2{
-       font-size:26px;
-       font-weight: 700;
-   }
     a, button {
-      color: #f4c430;
-      border-radius: 10px;
+      color: #000 !important;
+      background-color: #f4c430 !important;
+      border: none !important;
     }
-    .YELLOW{
-      font-size:24px;
-      font-weight: 600;
+    a:hover, button:hover {
+      background-color: #d4a800 !important;
+      color: #000 !important;
+    }
+    .header-block {
+      text-align: center;
+      padding: 2rem;
+      border: 3px solid #f4c430;
+      margin-bottom: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+    }
+    .header-block h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
     .card {
       background-color: #1a1a1a;
-      border: 4px solid #333;
-      padding: 1rem;
-      border-radius: 10px;
+      border: 2px solid #f4c430;
+      padding: 1.5rem;
+      border-radius: 8px;
     }
     .card h3 {
       color: #f4c430;
+      margin-bottom: 0.5rem;
+    }
+    .review-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .review-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #f4c430;
+      object-fit: cover;
+    }
+    .review-card div {
+      flex: 1;
+    }
+    .review-card strong {
+      display: block;
+      margin-bottom: 0.25rem;
     }
   </style>
 </head>
@@ -49,49 +82,81 @@
 
   <nav class="container-fluid">
     <ul>
-      <li><strong class="YELLOW">Ironclad Built To Last. Built Right The First Time.  </strong></li>
+      <li><strong>Ironclad Services</strong></li>
     </ul>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="schedule.html" target="_blank">Schedule</a></li>
+      <li><a href="reviews.html" target="_blank">Reviews</a></li>
     </ul>
   </nav>
 
   <main class="container">
-    <div class="grid">
-      <section>
-        <hgroup>
-          <h2>Ironclad Services</h2>
-          <h3>Cascade, ID 83611</h3>
-        </hgroup>
-        <p>Reliable handyman, plumbing, and fabrication services built on quality and durability.</p>
+
+    <!-- Big Header -->
+    <section class="header-block">
+      <h1>IRONCLAD SERVICES</h1>
+      <h2>Cascade, ID 83611</h2>
+    </section>
+
+    <!-- Two column layout -->
+    <div class="grid-2">
+
+      <!-- Services -->
+      <div>
+        <div class="card">
+          <h3>Handyman Services</h3>
+          <p>General repairs, maintenance, and home upgrades. Fixing drywall, doors, caulking, and more.</p>
+          <a href="handyman.html" target="_blank" role="button">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Plumbing & Electrical</h3>
+          <p>Minor plumbing and electrical troubleshooting. Leaks, fixtures, outlets, lighting, and inspections.</p>
+          <a href="plumbing.html" target="_blank" role="button">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Fabrication & Auto</h3>
+          <p>Custom welding, metal fabrication, and mobile auto repairs. Specialty projects welcome.</p>
+          <a href="fabrication.html" target="_blank" role="button">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Customer Reviews -->
+      <div>
+        <h2>Satisfied Customer Reviews</h2>
         
-        <div class="grid">
-          <div class="card">
-            <h3>Handyman Services</h3>
-            <p>General repairs, maintenance, and home upgrades.</p>
-            <a href="handyman.html" target="_blank" role="button">View Details</a>
-          </div>
-
-          <div class="card">
-            <h3>Plumbing & Electrical</h3>
-            <p>Minor plumbing and electrical repairs for your home or business.</p>
-            <a href="plumbing.html" target="_blank" role="button">View Details</a>
-          </div>
-
-          <div class="card">
-            <h3>Fabrication & Auto</h3>
-            <p>Custom welding, fabrication, and mobile auto services.</p>
-            <a href="fabrication.html" target="_blank" role="button">View Details</a>
+        <div class="card review-card">
+          <img src="https://via.placeholder.com/60" alt="Customer 1">
+          <div>
+            <strong>John D.</strong>
+            <p>“Ironclad Services replaced my leaky faucet and fixed some wiring in one visit. Professional and fast!”</p>
           </div>
         </div>
-      </section>
+
+        <div class="card review-card">
+          <img src="https://via.placeholder.com/60" alt="Customer 2">
+          <div>
+            <strong>Sarah K.</strong>
+            <p>“Had them build a custom steel gate. Quality is excellent and price was fair. Highly recommend.”</p>
+          </div>
+        </div>
+
+        <div class="card review-card">
+          <img src="https://via.placeholder.com/60" alt="Customer 3">
+          <div>
+            <strong>Mike R.</strong>
+            <p>“They handled a long list of home fixes in one day. Saved me so much time. Honest and reliable.”</p>
+          </div>
+        </div>
+
+      </div>
     </div>
+
   </main>
 
   <footer class="container">
-    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a></small>
+    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a> • <a href="reviews.html" target="_blank">Leave a Review</a></small>
   </footer>
 
 </body>
-</html> #
+</html>
