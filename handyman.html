@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handyman Services - Ironclad Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    body {
+      background-color: #000;
+      background-image: 
+        linear-gradient(45deg, #111 25%, transparent 25%), 
+        linear-gradient(-45deg, #111 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #111 75%), 
+        linear-gradient(-45deg, transparent 75%, #111 75%);
+      background-size: 40px 40px;
+      background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+      color: #f4c430;
+    }
+    nav, footer {
+      background-color: #111;
+      border-bottom: 2px solid #f4c430;
+    }
+    a, button {
+      color: #f4c430;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .card h3 {
+      color: #f4c430;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Ironclad Services</strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="schedule.html" target="_blank">Schedule</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Handyman Services</h2>
+          <h3>Cascade, ID 83611</h3>
+        </hgroup>
+        <p>General repair, home upgrades, and maintenance solutions with transparent pricing.</p>
+        
+        <div class="grid">
+          <div class="card">
+            <h3>Basic Repairs</h3>
+            <p>Door fixes, drywall patches, fixture replacements.</p>
+            <p><strong>Starting at $75/hr</strong></p>
+          </div>
+
+          <div class="card">
+            <h3>Home Upgrades</h3>
+            <p>Install shelves, flooring, trim work, custom upgrades.</p>
+            <p><strong>Starting at $120/project</strong></p>
+          </div>
+
+          <div class="card">
+            <h3>Maintenance Packages</h3>
+            <p>Monthly or seasonal upkeep to keep your home in top shape.</p>
+            <p><strong>Custom pricing</strong></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="container">
+    <small><a href="index.html" target="_blank">Home</a> • <a href="schedule.html" target="_blank">Schedule</a></small>
+  </footer>
+
+</body>
+</html>
