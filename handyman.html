@@ -21,17 +21,37 @@
       background-color: #111;
       border-bottom: 2px solid #f4c430;
     }
-    a, button {
-      color: #f4c430;
+    a[role="button"], button {
+      background-color: #f4c430 !important;
+      color: #000 !important;
+      border: none !important;
+      padding: 0.5rem 1rem;
+    }
+    a[role="button"]:hover, button:hover {
+      background-color: #d4a800 !important;
+      color: #000 !important;
+    }
+    .header-block {
+      text-align: center;
+      padding: 2rem;
+      border: 3px solid #f4c430;
+      margin-bottom: 3rem;
+      background-color: transparent;
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 4rem;
     }
     .card {
       background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 1rem;
+      border: 2px solid #f4c430;
+      padding: 2rem;
       border-radius: 8px;
+      margin-bottom: 2.5rem;
     }
     .card h3 {
       color: #f4c430;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -42,45 +62,62 @@
       <li><strong>Ironclad Services</strong></li>
     </ul>
     <ul>
-      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="schedule.html" target="_blank">Schedule</a></li>
+      <li><a href="reviews.html" target="_blank">Reviews</a></li>
     </ul>
   </nav>
 
   <main class="container">
-    <div class="grid">
-      <section>
-        <hgroup>
-          <h2>Handyman Services</h2>
-          <h3>Cascade, ID 83611</h3>
-        </hgroup>
-        <p>General repair, home upgrades, and maintenance solutions with transparent pricing.</p>
-        
-        <div class="grid">
-          <div class="card">
-            <h3>Basic Repairs</h3>
-            <p>Door fixes, drywall patches, fixture replacements.</p>
-            <p><strong>Starting at $75/hr</strong></p>
-          </div>
 
-          <div class="card">
-            <h3>Home Upgrades</h3>
-            <p>Install shelves, flooring, trim work, custom upgrades.</p>
-            <p><strong>Starting at $120/project</strong></p>
-          </div>
+    <section class="header-block">
+      <h1>Handyman Services</h1>
+      <h2>Cascade, ID 83611</h2>
+    </section>
 
-          <div class="card">
-            <h3>Maintenance Packages</h3>
-            <p>Monthly or seasonal upkeep to keep your home in top shape.</p>
-            <p><strong>Custom pricing</strong></p>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section>
+      <div class="card">
+        <h3>Basic Repairs</h3>
+        <p>Quick fixes and general home repairs:</p>
+        <ul>
+          <li>Doors, hinges, knobs</li>
+          <li>Drywall patches & paint touch-ups</li>
+          <li>Fixture replacements</li>
+        </ul>
+        <p><strong>Starting at $75/hr</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Home Upgrades</h3>
+        <p>Small improvements to keep your space updated:</p>
+        <ul>
+          <li>Install shelves & cabinetry</li>
+          <li>Flooring & trim work</li>
+          <li>Custom carpentry upgrades</li>
+        </ul>
+        <p><strong>Starting at $120/project</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Maintenance Packages</h3>
+        <p>Keep your home in top shape year-round:</p>
+        <ul>
+          <li>Seasonal check-ups</li>
+          <li>Monthly upkeep</li>
+          <li>Preventative maintenance</li>
+        </ul>
+        <p><strong>Custom pricing</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <a href="schedule.html?service=Handyman%20Services" role="button">Book This Service</a>
+    </section>
+
   </main>
 
   <footer class="container">
-    <small><a href="index.html" target="_blank">Home</a> • <a href="schedule.html" target="_blank">Schedule</a></small>
+    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a> • <a href="reviews.html" target="_blank">Reviews</a></small>
   </footer>
 
 </body>
