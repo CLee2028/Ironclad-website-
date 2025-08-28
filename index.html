@@ -26,7 +26,7 @@
       color: #000 !important;
       border: none !important;
       font-size: 0.9rem;
-      padding: 0.4rem 0.8rem;
+      padding: 0.5rem 1rem;
     }
     a[role="button"]:hover, button:hover {
       background-color: #d4a800 !important;
@@ -36,28 +36,32 @@
       text-align: center;
       padding: 2rem;
       border: 3px solid #f4c430;
-      margin-bottom: 2rem;
-      background-color: transparent; /* transparent background */
+      margin-bottom: 3rem;
+      background-color: transparent;
       border-radius: 8px;
     }
     .header-block h1 {
       font-size: 2.5rem;
       margin: 0;
     }
-    .grid-2 {
-      display:flex;
-      justify-content: center;
+    section {
+      margin-bottom: 5rem; /* spacing between sections */
+    }
+    .grid-services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem; /* horizontal and vertical spacing */
     }
     .card {
       background-color: #1a1a1a;
       border: 2px solid #f4c430;
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 8px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem; /* extra vertical space */
     }
     .card h3 {
       color: #f4c430;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     .review-card {
       display: flex;
@@ -65,15 +69,15 @@
       gap: 1rem;
     }
     .review-card img {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       border: 2px solid #f4c430;
       object-fit: cover;
     }
     .review-card strong {
       display: block;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -84,6 +88,79 @@
       <li><strong>Ironclad Services</strong></li>
     </ul>
     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html" target="_blank">Schedule</a></li>
+      <li><a href="reviews.html" target="_blank">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- Big Header -->
+    <section class="header-block">
+      <h1>IRONCLAD SERVICES</h1>
+      <h2>Cascade, ID 83611</h2>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <h2>Our Services</h2>
+      <div class="grid-services">
+        <div class="card">
+          <h3>Handyman Services</h3>
+          <p>General repairs, maintenance, and home upgrades. Fixing drywall, doors, caulking, and more.</p>
+          <a href="handyman.html" target="_blank" role="button">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Plumbing & Electrical</h3>
+          <p>Minor plumbing and electrical troubleshooting. Leaks, fixtures, outlets, lighting, and inspections.</p>
+          <a href="plumbing.html" target="_blank" role="button">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Fabrication & Auto</h3>
+          <p>Custom welding, metal fabrication, and mobile auto repairs. Specialty projects welcome.</p>
+          <a href="fabrication.html" target="_blank" role="button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section>
+      <h2>Satisfied Customer Reviews</h2>
+
+      <div class="card review-card">
+        <img src="https://via.placeholder.com/60" alt="Customer 1">
+        <div>
+          <strong>John D.</strong>
+          <p>“Ironclad Services replaced my leaky faucet and fixed some wiring in one visit. Professional and fast!”</p>
+        </div>
+      </div>
+
+      <div class="card review-card">
+        <img src="https://via.placeholder.com/60" alt="Customer 2">
+        <div>
+          <strong>Sarah K.</strong>
+          <p>“Had them build a custom steel gate. Quality is excellent and price was fair. Highly recommend.”</p>
+        </div>
+      </div>
+
+      <div class="card review-card">
+        <img src="https://via.placeholder.com/60" alt="Customer 3">
+        <div>
+          <strong>Mike R.</strong>
+          <p>“They handled a long list of home fixes in one day. Saved me so much time. Honest and reliable.”</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a> • <a href="reviews.html" target="_blank">Leave a Review</a></small>
+  </footer>
+
+</body>
+</html>    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="schedule.html" target="_blank">Schedule</a></li>
       <li><a href="reviews.html" target="_blank">Reviews</a></li>
