@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule Service - Ironclad Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    body {
+      background-color: #000;
+      background-image: 
+        linear-gradient(45deg, #111 25%, transparent 25%), 
+        linear-gradient(-45deg, #111 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #111 75%), 
+        linear-gradient(-45deg, transparent 75%, #111 75%);
+      background-size: 40px 40px;
+      background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+      color: #f4c430;
+    }
+    nav, footer {
+      background-color: #111;
+      border-bottom: 2px solid #f4c430;
+    }
+    a, button {
+      color: #f4c430;
+    }
+    form {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    label {
+      color: #f4c430;
+    }
+    input, textarea {
+      background: #000;
+      color: #f4c430;
+      border: 1px solid #333;
+    }
+    button {
+      background-color: #f4c430;
+      color: #000;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Ironclad Services</strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="schedule.html" target="_blank">Schedule</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section>
+      <hgroup>
+        <h2>Schedule a Service</h2>
+        <h3>Cascade, ID 83611</h3>
+      </hgroup>
+      <p>Fill out the form below to request service. We’ll respond as soon as possible.</p>
+      
+      <!-- Replace action URL with your Formspree or EmailJS endpoint -->
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Describe your project or issue" required></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small><a href="index.html" target="_blank">Home</a> • <a href="schedule.html" target="_blank">Schedule</a></small>
+  </footer>
+
+</body>
+</html>
