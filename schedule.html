@@ -99,4 +99,20 @@
   </script>
 
 </body>
+</html>    </section>
+  </main>
+
+  <footer class="container">
+    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a> • <a href="reviews.html" target="_blank">Reviews</a></small>
+  </footer>
+
+  <script>
+    // Autofill service from URL (e.g. ?service=Handyman%20Services)
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('service')) {
+      document.getElementById('service').value = params.get('service');
+    }
+  </script>
+
+</body>
 </html>
