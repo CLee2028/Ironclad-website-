@@ -21,14 +21,20 @@
       background-color: #111;
       border-bottom: 2px solid #f4c430;
     }
-    a, button {
-      color: #f4c430;
+    a[role="button"], button {
+      background-color: #f4c430 !important;
+      color: #000 !important;
+      border: none !important;
+    }
+    a[role="button"]:hover, button:hover {
+      background-color: #d4a800 !important;
+      color: #000 !important;
     }
     form {
       background-color: #1a1a1a;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 8px;
-      border: 1px solid #333;
+      border: 2px solid #f4c430;
     }
     label {
       color: #f4c430;
@@ -37,11 +43,6 @@
       background: #000;
       color: #f4c430;
       border: 1px solid #333;
-    }
-    button {
-      background-color: #f4c430;
-      color: #000;
-      border: none;
     }
   </style>
 </head>
@@ -52,20 +53,18 @@
       <li><strong>Ironclad Services</strong></li>
     </ul>
     <ul>
-      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="schedule.html" target="_blank">Schedule</a></li>
+      <li><a href="reviews.html" target="_blank">Reviews</a></li>
     </ul>
   </nav>
 
   <main class="container">
     <section>
-      <hgroup>
-        <h2>Schedule a Service</h2>
-        <h3>Cascade, ID 83611</h3>
-      </hgroup>
+      <h2>Schedule a Service</h2>
+      <h3>Cascade, ID 83611</h3>
       <p>Fill out the form below to request service. We’ll respond as soon as possible.</p>
       
-      <!-- Connected to your Formspree endpoint -->
       <form action="https://formspree.io/f/mvgbgvdj" method="POST">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" placeholder="Your full name" required>
@@ -76,8 +75,11 @@
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Describe your project or issue" required></textarea>
+        <label for="service">Service Requested</label>
+        <input type="text" id="service" name="service" readonly>
+
+        <label for="notes">Additional Notes (optional)</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Describe your needs (optional)"></textarea>
 
         <button type="submit">Submit Request</button>
       </form>
@@ -85,8 +87,16 @@
   </main>
 
   <footer class="container">
-    <small><a href="index.html" target="_blank">Home</a> • <a href="schedule.html" target="_blank">Schedule</a></small>
+    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a> • <a href="reviews.html" target="_blank">Reviews</a></small>
   </footer>
+
+  <script>
+    // Autofill service from URL (e.g. ?service=Handyman%20Services)
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('service')) {
+      document.getElementById('service').value = params.get('service');
+    }
+  </script>
 
 </body>
 </html>
