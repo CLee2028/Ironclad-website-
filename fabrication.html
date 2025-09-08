@@ -21,17 +21,37 @@
       background-color: #111;
       border-bottom: 2px solid #f4c430;
     }
-    a, button {
-      color: #f4c430;
+    a[role="button"], button {
+      background-color: #f4c430 !important;
+      color: #000 !important;
+      border: none !important;
+      padding: 0.5rem 1rem;
+    }
+    a[role="button"]:hover, button:hover {
+      background-color: #d4a800 !important;
+      color: #000 !important;
+    }
+    .header-block {
+      text-align: center;
+      padding: 2rem;
+      border: 3px solid #f4c430;
+      margin-bottom: 3rem;
+      background-color: transparent;
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 4rem;
     }
     .card {
       background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 1rem;
+      border: 2px solid #f4c430;
+      padding: 2rem;
       border-radius: 8px;
+      margin-bottom: 2.5rem;
     }
     .card h3 {
       color: #f4c430;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -42,45 +62,59 @@
       <li><strong>Ironclad Services</strong></li>
     </ul>
     <ul>
-      <li><a href="index.html" target="_blank">Home</a></li>
-      <li><a href="schedule.html" target="_blank">Schedule</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
   <main class="container">
-    <div class="grid">
-      <section>
-        <hgroup>
-          <h2>Fabrication & Auto Services</h2>
-          <h3>Cascade, ID 83611</h3>
-        </hgroup>
-        <p>Custom welding, metal fabrication, and mobile auto services.</p>
-        
-        <div class="grid">
-          <div class="card">
-            <h3>Welding & Fabrication</h3>
-            <p>Custom steel work, repairs, brackets, gates, and more.</p>
-            <p><strong>Starting at $100/hr</strong></p>
-          </div>
 
-          <div class="card">
-            <h3>On-Site Auto Services</h3>
-            <p>Mobile diagnostics, small repairs, welding for vehicles.</p>
-            <p><strong>Starting at $125/hr</strong></p>
-          </div>
+    <section class="header-block">
+      <h1>Fabrication & Auto Services</h1>
+      <h2>Cascade, ID 83611</h2>
+    </section>
 
-          <div class="card">
-            <h3>Custom Projects</h3>
-            <p>Specialty builds and one-of-a-kind fabrication solutions.</p>
-            <p><strong>Custom pricing</strong></p>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section>
+      <div class="card">
+        <h3>Welding & Fabrication</h3>
+        <ul>
+          <li>Custom steel work</li>
+          <li>Repairs & reinforcements</li>
+          <li>Metal gates & brackets</li>
+        </ul>
+        <p><strong>Starting at $100/hr</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>On-Site Auto Services</h3>
+        <ul>
+          <li>Mobile diagnostics</li>
+          <li>Small auto repairs</li>
+          <li>Vehicle welding</li>
+        </ul>
+        <p><strong>Starting at $125/hr</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Custom Projects</h3>
+        <ul>
+          <li>Specialty builds</li>
+          <li>One-of-a-kind fabrication</li>
+          <li>Custom designs</li>
+        </ul>
+        <p><strong>Custom pricing</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <a href="schedule.html?service=Fabrication%20and%20Auto" role="button">Book This Service</a>
+    </section>
+
   </main>
 
   <footer class="container">
-    <small><a href="index.html" target="_blank">Home</a> • <a href="schedule.html" target="_blank">Schedule</a></small>
+    <small><a href="index.html">Home</a> • <a href="schedule.html">Schedule</a> • <a href="reviews.html">Reviews</a></small>
   </footer>
 
 </body>
