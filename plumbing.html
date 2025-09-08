@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ironclad Services - Cascade, ID</title>
+  <title>Plumbing & Electrical - Ironclad Services</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
     body {
@@ -25,7 +25,6 @@
       background-color: #f4c430 !important;
       color: #000 !important;
       border: none !important;
-      font-size: 0.9rem;
       padding: 0.5rem 1rem;
     }
     a[role="button"]:hover, button:hover {
@@ -40,44 +39,19 @@
       background-color: transparent;
       border-radius: 8px;
     }
-    .header-block h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
     section {
-      margin-bottom: 5rem; /* spacing between sections */
-    }
-    .grid-services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem; /* horizontal and vertical spacing */
+      margin-bottom: 4rem;
     }
     .card {
       background-color: #1a1a1a;
       border: 2px solid #f4c430;
       padding: 2rem;
       border-radius: 8px;
-      margin-bottom: 3rem; /* extra vertical space */
+      margin-bottom: 2.5rem;
     }
     .card h3 {
       color: #f4c430;
       margin-bottom: 1rem;
-    }
-    .review-card {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    .review-card img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      border: 2px solid #f4c430;
-      object-fit: cover;
-    }
-    .review-card strong {
-      display: block;
-      margin-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -89,74 +63,58 @@
     </ul>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="schedule.html" target="_blank">Schedule</a></li>
-      <li><a href="reviews.html" target="_blank">Reviews</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
   <main class="container">
 
-    <!-- Big Header -->
     <section class="header-block">
-      <h1>IRONCLAD SERVICES</h1>
+      <h1>Plumbing & Electrical</h1>
       <h2>Cascade, ID 83611</h2>
     </section>
 
-    <!-- Services Section -->
     <section>
-      <h2>Our Services</h2>
-      <div class="grid-services">
-        <div class="card">
-          <h3>Handyman Services</h3>
-          <p>General repairs, maintenance, and home upgrades. Fixing drywall, doors, caulking, and more.</p>
-          <a href="handyman.html" target="_blank" role="button">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Plumbing & Electrical</h3>
-          <p>Minor plumbing and electrical troubleshooting. Leaks, fixtures, outlets, lighting, and inspections.</p>
-          <a href="plumbing.html" target="_blank" role="button">Learn More</a>
-        </div>
-        <div class="card">
-          <h3>Fabrication & Auto</h3>
-          <p>Custom welding, metal fabrication, and mobile auto repairs. Specialty projects welcome.</p>
-          <a href="fabrication.html" target="_blank" role="button">Learn More</a>
-        </div>
+      <div class="card">
+        <h3>Plumbing Repairs</h3>
+        <ul>
+          <li>Leaky faucets</li>
+          <li>Drain unclogging</li>
+          <li>Pipe patching</li>
+        </ul>
+        <p><strong>Starting at $85/hr</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Fixture Installations</h3>
+        <ul>
+          <li>Sinks & toilets</li>
+          <li>Light fixtures</li>
+          <li>Outlets & switches</li>
+        </ul>
+        <p><strong>Starting at $100/project</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Electrical Troubleshooting</h3>
+        <ul>
+          <li>Wiring checks</li>
+          <li>Switch repairs</li>
+          <li>Safety inspections</li>
+        </ul>
+        <p><strong>Starting at $95/hr</strong></p>
       </div>
     </section>
 
-    <!-- Reviews Section -->
     <section>
-      <h2>Satisfied Customer Reviews</h2>
-
-      <div class="card review-card">
-        <img src="https://via.placeholder.com/60" alt="Customer 1">
-        <div>
-          <strong>John D.</strong>
-          <p>“Ironclad Services replaced my leaky faucet and fixed some wiring in one visit. Professional and fast!”</p>
-        </div>
-      </div>
-
-      <div class="card review-card">
-        <img src="https://via.placeholder.com/60" alt="Customer 2">
-        <div>
-          <strong>Sarah K.</strong>
-          <p>“Had them build a custom steel gate. Quality is excellent and price was fair. Highly recommend.”</p>
-        </div>
-      </div>
-
-      <div class="card review-card">
-        <img src="https://via.placeholder.com/60" alt="Customer 3">
-        <div>
-          <strong>Mike R.</strong>
-          <p>“They handled a long list of home fixes in one day. Saved me so much time. Honest and reliable.”</p>
-        </div>
-      </div>
+      <a href="schedule.html?service=Plumbing%20%26%20Electrical" role="button">Book This Service</a>
     </section>
 
   </main>
 
   <footer class="container">
-    <small><a href="index.html">Home</a> • <a href="schedule.html" target="_blank">Schedule</a> • <a href="reviews.html" target="_blank">Leave a Review</a></small>
+    <small><a href="index.html">Home</a> • <a href="schedule.html">Schedule</a> • <a href="reviews.html">Reviews</a></small>
   </footer>
 
 </body>
