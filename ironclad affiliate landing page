@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ironclad Recommendations — Built to Last</title>
+  <style>
+    /* Your existing CSS styles */
+  </style>
+</head>
+<body>
+
+<header>Ironclad Recommendations — Built to Last</header>
+
+<section class="intro">
+  <p>Everything I use and trust for home repair, welding, woodworking, and automotive projects—hand-picked for quality and performance.</p>
+  <button onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Shop Tools & Gear</button>
+</section>
+
+<section class="category" id="tools">
+  <h2>Tools & Equipment</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Milwaukee+M18+Hammer+Drill" alt="Milwaukee M18 Hammer Drill">
+      <h3>Milwaukee M18 18-Volt Lithium-Ion 1/2 in. Cordless Hammer Drill</h3>
+      <p>High-performance drill for heavy-duty tasks.</p>
+      <a href="https://www.amazon.com/dp/B01F2NYXKC?tag=youraffiliateID" target="_blank">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=CRAFTSMAN+V20+Drill" alt="CRAFTSMAN V20 Drill">
+      <h3>CRAFTSMAN V20 20-Volt Max 1/2-in Cordless Drill</h3>
+      <p>Reliable drill with keyless chuck and battery included.</p>
+      <a href="https://www.lowes.com/pd/CRAFTSMAN-V20-20-volt-Max-1-2-in-Cordless-Drill-1-Battery-Included-and-Charger-Included/5004861567?tag=youraffiliateID" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <h2>DIY & Crafts</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Epoxy+Resin+Kit" alt="Epoxy Resin Kit">
+      <h3>Epoxy Resin Kit for Crafts</h3>
+      <p>Perfect for creating custom projects and artwork.</p>
+      <a href="https://www.amazon.com/dp/B07XJ8C8F7?tag=youraffiliateID" target="_blank">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Woodworking+Tool+Set" alt="Woodworking Tool Set">
+      <h3>Complete Woodworking Tool Set</h3>
+      <p>All-in-one set for woodworking enthusiasts.</p>
+      <a href="https://www.amazon.com/dp/B07XJ8C8F7?tag=youraffiliateID" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <h2>Home & Automotive</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Plumbing+Tool+Kit" alt="Plumbing Tool Kit">
+      <h3>Plumbing Tool Kit</h3>
+      <p>Essential tools for home plumbing repairs.</p>
+      <a href="https://www.amazon.com/dp/B07XJ8C8F7?tag=youraffiliateID" target="_blank">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Auto+Repair+Tool+Set" alt="Auto Repair Tool Set">
+      <h3>Auto Repair Tool Set</h3>
+      <p>Comprehensive set for automotive maintenance.</p>
+      <a href="https://www.amazon.com/dp/B07XJ8C8F7?tag=youraffiliateID" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <h2>Learning & Courses</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Welding+Course" alt="Welding Course">
+      <h3>Welding Course for Beginners</h3>
+      <p>Step-by-step tutorials to master welding skills.</p>
+      <a href="https://www.amazon.com/dp/B07XJ8C8F7?tag=youraffiliateID" target="_blank">Enroll Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150.png?text=Woodworking+Course" alt="Woodworking Course">
+      <h3>Advanced Woodworking Techniques</h3>
+      <p>Learn professional woodworking skills.</p>
+      <a href="https://www.amazon.com/dp/B07XJ8C8F7?tag=youraffiliateID" target="_blank">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <p>Get the gear I use to get the job done right — every time!</p>
+  <button onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+</section>
+
+<footer>
+  <p>As an affiliate, I earn a small commission if you buy through these links — at no extra cost to you.</p>
+  <p>© Ironclad Services</p>
+</footer>
+
+</body>
+</html>
